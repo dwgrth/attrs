@@ -62,11 +62,12 @@ docs = [
   # See https://github.com/sphinx-contrib/sphinxcontrib-towncrier/issues/92
   "towncrier<24.7",
 ]
+
 docs-watch = [
   "attrs[docs]",
   "watchfiles",
 ]
-dev = ["attrs[tests]"]
+dev = ["attrs[tests]", "pre-commit-uv"]
 
 [project.urls]
 Documentation = "https://www.attrs.org/"
